@@ -1,0 +1,48 @@
+{
+  "name": "nextjs-approuter-playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "codegen-generate": "graphql-codegen --config codegen.ts"
+  },
+  "prisma": {
+    "seed": "dotenv -e .env.local -- ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts",
+    "generate": "dotenv -e .env.local -- prisma generate"
+  },
+  "dependencies": {
+    "@as-integrations/next": "^2.0.2",
+    "@formatjs/intl-localematcher": "^0.4.1",
+    "@pothos/core": "^3.35.0",
+    "@pothos/plugin-prisma": "^3.59.2",
+    "@prisma/client": "^5.2.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "bson": "^6.0.0",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "graphql": "^16.8.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-yoga": "^4.0.4",
+    "negotiator": "^0.6.3",
+    "next": "13.4.19",
+    "prisma": "^5.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@types/negotiator": "^0.6.1",
+    "@types/node": "^20.6.0",
+    "encoding": "^0.1.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

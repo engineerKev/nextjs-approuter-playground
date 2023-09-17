@@ -1,0 +1,4 @@
+type Mutation {
+  removeUser(id: String!): [User!]
+  addUser(email: String!, name: String!, imageUrl: String!): [User!]
+}

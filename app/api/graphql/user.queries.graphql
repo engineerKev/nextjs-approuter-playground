@@ -1,0 +1,5 @@
+type Query {
+  hello: String
+  users: [User!]
+  user(id: String!): [User!]
+}
